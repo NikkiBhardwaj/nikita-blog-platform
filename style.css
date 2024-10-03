@@ -1,0 +1,166 @@
+/* General styling for the body */
+/* Reset default browser margin and padding */
+/* General styling for the body */
+/* General styling for the body */
+/* General styles */
+/* General styles */
+/* General styles */
+/* General styles */
+/* General styles */
+/* General styles */
+/* General styles */
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Menu Icon */
+.menu_icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    right: -300px; /* Hidden offscreen */
+    top: 0;
+    height: 100%;
+    width: 200px; /* Reduced width to ensure icon visibility */
+    background-color: #3c3c3c; /* Dark grey for sidebar */
+    transition: right 0.3s ease; /* Smooth slide-in effect */
+    padding-top: 60px; /* Space from top */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.nav_items {
+    list-style: none;
+    padding: 0;
+}
+
+.nav_items li {
+    padding: 15px;
+    text-align: left;
+}
+
+.nav_items li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Show sidebar when toggled */
+.show_sidebar {
+    right: 0; /* Slide in from right */
+}
+
+/* Ensure the menu icon stays visible and accessible */
+.menu_icon {
+    z-index: 1001;
+    position: relative; /* Ensure it's above the sidebar */
+}
+
+/* Featured section */
+.featured {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.featured_container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.category_info {
+    max-width: 600px;
+}
+
+.category_info button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Posts section */
+.sec_post {
+    padding: 20px;
+}
+
+.sect_post {
+    display: flex;
+    gap: 20px;
+}
+
+.sect_posts {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title_post h1 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Category buttons */
+.category_container {
+    padding: 20px;
+}
+
+.category_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.category_buttons button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Media queries for responsive layout */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Full width on mobile */
+    }
+}
